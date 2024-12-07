@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetivos de Desenvolvimento Sustentável (ODS)</title>
+    <link rel="stylesheet" href="../css/ods.css">
+</head>
+<body>
+    <header>
+        <h1 onclick="redirectToHome()">Objetivos de Desenvolvimento Sustentável</h1>
+    </header>
+
+    <nav>
+        <button id="homeBtn" onclick="navigateTo('home')">Home</button>
+        <button id="sobreBtn" onclick="navigateTo('sobre')">Sobre</button>
+        <button id="negociosBtn" onclick="navigateTo('negociosSociais')">Negócios Sociais</button>
+        <button id="contatoBtn" onclick="navigateTo('contato')">Contato</button>
+        <button id="odsBtn" onclick="navigateTo('ods')">ODS</button>
+        <button id="loginBtn" onclick="navigateTo('login')">Login</button>
+        <button id="perfilBtn" onclick="navigateTo('perfil')" style="display: none;">Perfil</button>
+        <button id="logoutBtn" onclick="logout()" style="display: none;">Sair</button>
+    </nav>
+
+    
+    <section>
+
+        <h2>O que são os Objetivos de Desenvolvimento Sustentável?</h2>
+        <p>Os Objetivos de Desenvolvimento Sustentável (ODS) são uma iniciativa global lançada pela Organização das Nações Unidas (ONU) com o intuito de promover um desenvolvimento equilibrado e sustentável, focando em questões sociais, econômicas e ambientais. A proposta é alcançar esses objetivos até 2030, com a participação ativa de governos, empresas, sociedade civil e indivíduos.</p>
+    
+        <p>Os ODS foram estabelecidos em 2015, durante a Assembleia Geral da ONU, como parte da Agenda 2030 para o Desenvolvimento Sustentável. Essa agenda substitui os Objetivos de Desenvolvimento do Milênio (ODM), que estiveram em vigor entre 2000 e 2015. A diferença entre os ODS e os ODM é que os primeiros são mais abrangentes, incorporando uma abordagem universal que considera as necessidades e os contextos de todos os países, tanto desenvolvidos quanto em desenvolvimento.</p>
+    
+        <p>Os 17 ODS são interdependentes e abrangem questões como erradicação da pobreza, educação de qualidade, saúde, igualdade de gênero, água limpa e saneamento, trabalho decente, redução das desigualdades, ação contra as mudanças climáticas, entre outros. Cada objetivo possui metas específicas, que servem como direcionamento para as políticas públicas e ações de todos os setores da sociedade.</p>
+    
+        <p>Além disso, os ODS são acompanhados por indicadores que permitem medir o progresso de cada meta, facilitando a transparência e a responsabilização dos envolvidos. Essa iniciativa é uma das mais ambiciosas da história, buscando transformar o mundo em um lugar mais justo, equitativo e sustentável para as futuras gerações.</p>
+    
+        <p>Para que a Agenda 2030 seja bem-sucedida, é necessário que todos os países, comunidades e indivíduos se comprometam com sua implementação, garantindo que as mudanças sejam inclusivas e alcancem as populações mais vulneráveis. O caminho para atingir os ODS exige ação coletiva, inovação e um esforço constante para promover o bem-estar global, sem prejudicar o meio ambiente e as gerações futuras.</p>
+    
+
+        <h2>Conheça os 17 Objetivos de Desenvolvimento Sustentável</h2>
+        <div class="ods-container">
+            <!-- ODS 1 -->
+            <div class="ods-card">
+                <img src="../img/ods1.svg" alt="ODS 1">
+                <h3>ODS 1: Erradicação da Pobreza</h3>
+                <p>Acabar com a pobreza em todas as suas formas, em todos os lugares.</p>
+                <p><strong>Meta:</strong> Erradicar a pobreza extrema para todas as pessoas no mundo, atualmente medida como aquelas que vivem com menos de US$ 1,90 por dia.</p>
+            </div>
+    
+            <!-- ODS 2 -->
+            <div class="ods-card">
+                <img src="../img/ods2.svg" alt="ODS 2">
+                <h3>ODS 2: Fome Zero e Agricultura Sustentável</h3>
+                <p>Acabar com a fome, alcançar a segurança alimentar e promover a agricultura sustentável.</p>
+                <p><strong>Meta:</strong> Garantir o acesso de todas as pessoas a alimentos seguros, nutritivos e suficientes durante todo o ano.</p>
+            </div>
+    
+            <!-- ODS 3 -->
+            <div class="ods-card">
+                <img src="../img/ods3.svg" alt="ODS 3">
+                <h3>ODS 3: Saúde e Bem-Estar</h3>
+                <p>Assegurar uma vida saudável e promover o bem-estar para todos, em todas as idades.</p>
+                <p><strong>Meta:</strong> Reduzir a mortalidade materna global para menos de 70 por 100.000 nascidos vivos.</p>
+            </div>
+    
+            <!-- ODS 4 -->
+            <div class="ods-card">
+                <img src="../img/ods4.svg" alt="ODS 4">
+                <h3>ODS 4: Educação de Qualidade</h3>
+                <p>Assegurar a educação inclusiva, equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todos.</p>
+                <p><strong>Meta:</strong> Garantir que todos os jovens e uma proporção substancial de adultos, homens e mulheres, tenham alfabetização e competências numéricas.</p>
+            </div>
+    
+            <!-- ODS 5 -->
+            <div class="ods-card">
+                <img src="../img/ods5.svg" alt="ODS 5">
+                <h3>ODS 5: Igualdade de Gênero</h3>
+                <p>Alcançar a igualdade de gênero e empoderar todas as mulheres e meninas.</p>
+                <p><strong>Meta:</strong> Eliminar todas as formas de violência contra todas as mulheres e meninas nas esferas públicas e privadas.</p>
+            </div>
+    
+            <!-- ODS 6 -->
+            <div class="ods-card">
+                <img src="../img/ods6.svg" alt="ODS 6">
+                <h3>ODS 6: Água Potável e Saneamento</h3>
+                <p>Garantir a disponibilidade e a gestão sustentável da água e saneamento para todos.</p>
+                <p><strong>Meta:</strong> Garantir o acesso universal e equitativo à água potável e segura para todos.</p>
+            </div>
+    
+            <!-- ODS 7 -->
+            <div class="ods-card">
+                <img src="../img/ods7.svg" alt="ODS 7">
+                <h3>ODS 7: Energia Limpa e Acessível</h3>
+                <p>Garantir acesso a fontes de energia confiáveis, sustentáveis e modernas para todos.</p>
+                <p><strong>Meta:</strong> Aumentar substancialmente a participação de energias renováveis na matriz energética global.</p>
+            </div>
+    
+            <!-- ODS 8 -->
+            <div class="ods-card">
+                <img src="../img/ods8.svg" alt="ODS 8">
+                <h3>ODS 8: Trabalho Decente e Crescimento Econômico</h3>
+                <p>Promover o crescimento econômico sustentado, inclusivo e sustentável, emprego pleno e produtivo e trabalho decente para todos.</p>
+                <p><strong>Meta:</strong> Reduzir substancialmente a proporção de jovens que não estão empregados, em educação ou treinamento.</p>
+            </div>
+    
+            <!-- ODS 9 -->
+            <div class="ods-card">
+                <img src="../img/ods9.svg" alt="ODS 9">
+                <h3>ODS 9: Indústria, Inovação e Infraestrutura</h3>
+                <p>Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação.</p>
+                <p><strong>Meta:</strong> Aumentar o acesso de pequenas indústrias e outras empresas ao crédito e à integração em cadeias de valor e mercados.</p>
+            </div>
+    
+            <!-- ODS 10 -->
+            <div class="ods-card">
+                <img src="../img/ods10.svg" alt="ODS 10">
+                <h3>ODS 10: Redução das Desigualdades</h3>
+                <p>Reduzir as desigualdades dentro dos países e entre eles.</p>
+                <p><strong>Meta:</strong> Potencializar e promover a inclusão social, econômica e política de todos.</p>
+            </div>
+    
+            <!-- ODS 11 -->
+            <div class="ods-card">
+                <img src="../img/ods11.svg" alt="ODS 11">
+                <h3>ODS 11: Cidades e Comunidades Sustentáveis</h3>
+                <p>Tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis.</p>
+                <p><strong>Meta:</strong> Garantir o acesso de todos a habitação segura e a serviços básicos a preços acessíveis.</p>
+            </div>
+    
+            <!-- ODS 12 -->
+            <div class="ods-card">
+                <img src="../img/ods12.svg" alt="ODS 12">
+                <h3>ODS 12: Consumo e Produção Responsáveis</h3>
+                <p>Assegurar padrões de produção e de consumo sustentáveis.</p>
+                <p><strong>Meta:</strong> Reduzir pela metade o desperdício de alimentos per capita global na venda e no consumo.</p>
+            </div>
+    
+            <!-- ODS 13 -->
+            <div class="ods-card">
+                <img src="../img/ods13.svg" alt="ODS 13">
+                <h3>ODS 13: Ação Contra a Mudança Global do Clima</h3>
+                <p>Tomar medidas urgentes para combater a mudança climática e seus impactos.</p>
+                <p><strong>Meta:</strong> Melhorar a educação e conscientização sobre mitigação e adaptação às mudanças climáticas.</p>
+            </div>
+    
+            <!-- ODS 14 -->
+            <div class="ods-card">
+                <img src="../img/ods14.svg" alt="ODS 14">
+                <h3>ODS 14: Vida na Água</h3>
+                <p>Conservar e usar de forma sustentável os oceanos, os mares e os recursos marinhos.</p>
+                <p><strong>Meta:</strong> Prevenir e reduzir significativamente a poluição marinha.</p>
+            </div>
+    
+            <!-- ODS 15 -->
+            <div class="ods-card">
+                <img src="../img/ods15.svg" alt="ODS 15">
+                <h3>ODS 15: Vida Terrestre</h3>
+                <p>Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres.</p>
+                <p><strong>Meta:</strong> Combater a desertificação, restaurar terras degradadas e solos.</p>
+            </div>
+    
+            <!-- ODS 16 -->
+            <div class="ods-card">
+                <img src="../img/ods16.svg" alt="ODS 16">
+                <h3>ODS 16: Paz, Justiça e Instituições Eficazes</h3>
+                <p>Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável.</p>
+                <p><strong>Meta:</strong> Reduzir significativamente todas as formas de violência e taxas de mortalidade relacionadas.</p>
+            </div>
+    
+            <!-- ODS 17 -->
+            <div class="ods-card">
+                <img src="../img/ods17.svg" alt="ODS 17">
+                <h3>ODS 17: Parcerias e Meios de Implementação</h3>
+                <p>Fortalecer os meios de implementação e revitalizar a parceria global para o desenvolvimento sustentável.</p>
+                <p><strong>Meta:</strong> Reforçar a mobilização de recursos internos e a cooperação internacional.</p>
+            </div>
+        </div>
+    </section>    
+
+    <footer>
+        <p>&copy; 2024 Redes de Impacto. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

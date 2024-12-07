@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../css/contato.css">
+</head>
+<body>
+
+    <header>
+        <h1 onclick="redirectToHome()">Perfil do usuário</h1>
+    </header>
+
+    <nav>
+        <button id="homeBtn" onclick="navigateTo('home')">Home</button>
+        <button id="sobreBtn" onclick="navigateTo('sobre')">Sobre</button>
+        <button id="negociosBtn" onclick="navigateTo('negociosSociais')">Negócios Sociais</button>
+        <button id="contatoBtn" onclick="navigateTo('contato')">Contato</button>
+        <button id="odsBtn" onclick="navigateTo('ods')">ODS</button>
+        <button id="loginBtn" onclick="navigateTo('login')">Login</button>
+        <button id="perfilBtn" onclick="navigateTo('perfil')" style="display: none;">Perfil</button>
+        <button id="logoutBtn" onclick="logout()" style="display: none;">Sair</button>
+    </nav>
+
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade">
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha">
+
+        <label for="avatar">Avatar:</label>
+        <input type="file" id="avatar" name="avatar">
+
+        <label for="email">Email cadastrado:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="emailComercial">Email Comercial:</label>
+        <input type="email" id="emailComercial" name="emailComercial">
+
+        <label for="celular">Celular:</label>
+        <input type="text" id="celular" name="celular">
+
+        <label for="site">Site:</label>
+        <input type="text" id="site" name="site">
+
+        <label for="redeSocial">Rede Social:</label>
+        <input type="text" id="redeSocial" name="redeSocial">
+
+        <label for="ramo">Ramo de Atuação:</label>
+        <select id="ramo" name="ramo" required>
+            <option value="">Selecione um ramo</option>
+        </select>
+
+        <button type="button" onclick="submitForm()">Atualizar</button>
+    </form>
+
+    <div class="excluirConta">
+        <button type="button" onclick="excluirConta()">Excluir conta</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Redes de Impacto. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../js/menu.js"></script>
+    <script src="../js/perfil.js" text="javascript"></script>
+</body>
+</html>

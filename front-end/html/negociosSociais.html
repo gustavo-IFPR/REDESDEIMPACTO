@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negócios Sociais</title>
+    <link rel="stylesheet" href="../css/negociosSociais.css">
+
+</head>
+<body>
+
+    <header>
+        <h1 onclick="redirectToHome()">Negócios Sociais</h1>
+    </header>
+
+    <nav>
+        <button id="homeBtn" onclick="navigateTo('home')">Home</button>
+        <button id="sobreBtn" onclick="navigateTo('sobre')">Sobre</button>
+        <button id="negociosBtn" onclick="navigateTo('negociosSociais')">Negócios Sociais</button>
+        <button id="contatoBtn" onclick="navigateTo('contato')">Contato</button>
+        <button id="odsBtn" onclick="navigateTo('ods')">ODS</button>
+        <button id="loginBtn" onclick="navigateTo('login')">Login</button>
+        <button id="perfilBtn" onclick="navigateTo('perfil')" style="display: none;">Perfil</button>
+        <button id="logoutBtn" onclick="logout()" style="display: none;">Sair</button>
+    </nav>
+
+    <main>
+        <form id="searchForm">
+            <input type="text" id="searchQuery" placeholder="Pesquisar negócios sociais">
+            <select id="selectRamo">
+                <!--Será carregado dinamicamente com o javascript-->
+            </select>
+            <select id="selectCidade">
+                <!--Será carregado dinamicamente com o javascript-->
+            </select>
+            <button type="button" onclick="searchBusiness()">Pesquisar</button>
+        </form>
+
+        <section id="results">
+            <!--Carregado automaticamente com o javascript-->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Negócios Sociais. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../js/negociosSociais.js" text="javascript"></script>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

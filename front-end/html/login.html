@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+    <header>
+        <h1 onclick="redirectToHome()">Login</h1>
+    </header>
+
+    <nav>
+        <button onclick="window.location.href='../index.html'">Home</button>
+        <button onclick="window.location.href='./sobre.html'">Sobre</button>
+        <button onclick="window.location.href='./negociosSociais.html'">Negócios Sociais</button>
+        <button onclick="window.location.href='./contato.html'">Contato</button>
+        <button onclick="window.location.href='./ods.html'">ODS</button>
+        <button onclick="window.location.href='./login.html'">Login</button>
+    </nav>
+
+    <form>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <button type="button" onclick="login()">Entrar</button>
+        <button type="button" onclick="window.location.href='./Cadastrar.html'">Cadastrar</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Redes de Impacto. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../js/login.js" text="javascript"></script>
+</body>
+</html>
