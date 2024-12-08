@@ -1,4 +1,4 @@
-```markdown
+
 # Projeto: Redes de Impacto
 
 ## Descrição  
@@ -57,4 +57,3 @@ const dbConfig = {
 
 ### 5. Testar a Aplicação  
 Abra o navegador e acesse a URL fornecida pelo servidor para verificar se a aplicação está funcionando corretamente.  
-```
