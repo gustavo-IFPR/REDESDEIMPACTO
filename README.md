@@ -1,29 +1,33 @@
-# Aplicação: Conexão de Negócios Sociais
+```markdown
+# Projeto: Redes de Impacto
 
 ## Descrição  
-Esta aplicação conecta negócios sociais e comunidades no Paraná, visando a redução da desigualdade social.  
+Este projeto conecta negócios sociais a comunidades populares, utilizando um **backend** em Node.js integrado a um banco de dados MySQL e um **frontend** simples em HTML, CSS e JavaScript, servido via **Live Server**.  
 
 ## Pré-requisitos  
-Antes de começar, certifique-se de ter o seguinte instalado no seu computador:  
-- **Node.js**.
-- **MySQL**.
-- Uma ferramenta de programação da sua preferencia.
+Certifique-se de ter os seguintes softwares instalados:  
+1. **MySQL Workbench** (ou outro gerenciador de banco de dados).  
+2. **Node.js** (versão 14 ou superior).  
+   - Instale em: [Node.js Downloads](https://nodejs.org/)  
+3. **Visual Studio Code** (para edição e execução do frontend com Live Server).  
+   - Instale em: [VS Code Downloads](https://code.visualstudio.com/)  
 
 ## Configuração  
 
-### 1. Abaixar o repositório  
+### 1. Clonar o Repositório  
 ```bash  
-git clone https://https://github.com/gustavo-IFPR/redesDeImpacto  
+git clone https://github.com/gustavo-IFPR/redesDeImpacto  
 cd redesDeImpacto  
 ```  
 
-### 2. Configure o Banco de Dados  
-1. Abra o MySQL e crie um banco de dados.  
-2. Execute o arquivo SQL "bancoRedesDeImpacto" disponível no diretório para configurar as tabelas e os dados iniciais
+### 2. Configurar o Banco de Dados  
+1. Abra o **MySQL Workbench** ou outro gerenciador de banco de dados.  
+2. Crie um banco de dados.  
+3. Execute o arquivo SQL `bancoRedesDeImpacto.sql` (localizado no diretório do projeto) para criar as tabelas e inserir os dados iniciais.  
 
-### 3. Configure o arquivo `mysql.js`  
+### 3. Configurar o Arquivo `mysql.js`  
 1. Navegue até a pasta `back-end`.  
-2. Abra o arquivo `mysql.js` na sua ferramenta de programação.  
+2. Abra o arquivo `mysql.js` no Visual Studio Code ou outro editor.  
 3. Atualize os campos `password` e `database` com suas credenciais do MySQL.  
 
 Exemplo:  
@@ -36,9 +40,12 @@ const dbConfig = {
 };  
 ```  
 
-### 4. Inicie o Servidor  
-1. No terminal, navegue até a pasta `back-end`.  
-2. Instale no projeto:  
+### 4. Iniciar o Servidor Backend  
+1. Abra o terminal e navegue até a pasta `back-end`.  
+   ```bash  
+   cd back-end  
+   ```  
+2. Instale as dependências do projeto:  
    ```bash  
    npm install  
    ```  
@@ -46,6 +53,8 @@ const dbConfig = {
    ```bash  
    npm start  
    ```  
+   Certifique-se de que nenhuma outra aplicação esteja utilizando a porta especificada no arquivo `server.js`.  
 
-### 5. Teste a Aplicação  
-Abra o navegador e acesse a URL fornecida pelo servidor para verificar se está funcionando corretamente.
+### 5. Testar a Aplicação  
+Abra o navegador e acesse a URL fornecida pelo servidor para verificar se a aplicação está funcionando corretamente.  
+```
