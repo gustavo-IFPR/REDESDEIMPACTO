@@ -55,5 +55,7 @@ const dbConfig = {
    ```  
    Certifique-se de que nenhuma outra aplicação esteja utilizando a porta especificada no arquivo `server.js`.  
 
-### 5. Testar a Aplicação  
-Abra o navegador e acesse a URL fornecida pelo servidor para verificar se a aplicação está funcionando corretamente.  
+#### 5. Instale a extensão do "live server" no VSCODE
+#### 6. Abra a pasta do frontend
+Clique com o botão direito no arquivo index.html e selecione "Open with Live Server".
+#### 7. O frontend será carregado automaticamente no navegador.
